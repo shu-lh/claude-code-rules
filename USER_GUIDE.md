@@ -1,5 +1,7 @@
 # Claude Code 规则系统 — 用户指南
 
+> 最后修改: 2026-05-17
+
 ## 它是什么
 
 这是一套两级规则系统，让 Claude Code 自动遵守你的工作规范：
@@ -53,6 +55,7 @@
 
 | 命令 | 作用 | 何时用 |
 |------|------|--------|
+| `/audit-rules` | Self-audit rule system for contradictions, redundancy, vagueness | 怀疑规则冲突/过时；大幅修改规则后 |
 | `/check-freshness` | 检查规则参数是否过时 | 首次使用；每隔几周 |
 | `/check-freshness full` | 完整检查（含工具链版本） | 每月一次 |
 | `/why` | 解释 Claude 为什么这样决策 | 行为不符合预期时 |

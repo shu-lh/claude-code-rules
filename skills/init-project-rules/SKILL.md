@@ -2,6 +2,7 @@
 name: init-project-rules
 description: 分析当前项目并自动生成适配的 .claude/CLAUDE.md 和 .claude/rules/。用于新项目首次配置。
 user-invocable: true
+status: experimental
 allowed-tools:
   - Read
   - Write

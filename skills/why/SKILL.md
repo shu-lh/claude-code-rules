@@ -2,6 +2,7 @@
 name: why
 description: 追溯 Claude 最近决策的规则依据，列出影响特定行为的具体规则
 user-invocable: true
+status: experimental
 allowed-tools:
   - Read
   - Glob

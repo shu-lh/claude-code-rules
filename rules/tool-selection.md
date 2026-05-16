@@ -41,4 +41,4 @@
 - Agent (Plan) 仅用于复杂多文件任务，简单改动直接动手
 - Agent (general-purpose) 仅在 Explore/Plan 都不适用时使用
 - WebSearch/WebFetch 仅在用户明确要求或本地信息确实不足时使用
-- Skill 优先于 Agent——检查是否有匹配的 skill，没有再考虑 Agent
+- Skill 优先于 Agent——检查是否有匹配的 skill，没有再考虑 Agent（`skill-management.md` §7 最小权限原则确保 skill 工具声明不会过大）

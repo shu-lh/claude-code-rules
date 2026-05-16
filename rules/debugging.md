@@ -9,8 +9,9 @@
 
 ## 1. Decision Trace `/why` [MUST]
 
-用户可随时问"为什么这样做"。
-Claude 回答时列出影响该决策的具体规则：
+用户可随时问"为什么这样做"。执行流程见 `[Skill: /why]`。
+
+回答时列出影响该决策的具体规则：
 
 ```
 决策：<做了什么>
@@ -25,6 +26,13 @@ Claude 回答时列出影响该决策的具体规则：
 - 仅对当前请求生效
 - Claude 在响应中标注使用了旁路
 - 示列：`[override: rules/interaction.md §2]` 临时允许写注释
+
+### 2.1 Implicit Override [MUST]
+
+当用户明确要求执行与 [MUST] 规则冲突的操作时（如要求写注释 vs `interaction.md §2`），Claude 应：
+- 简短注明规则冲突："[OVERRIDE] 此操作覆盖了 <规则文件> §N"
+- 执行用户意图
+- 不反复确认，用户指令优先于所有规则
 
 ## 3. Rule Trigger Report
 
