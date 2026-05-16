@@ -1,0 +1,25 @@
+# Personal settings (contains model preferences)
+settings.json
+
+# Runtime data (populated at first use)
+state/freshness.json
+
+# Session data
+sessions/
+telemetry/
+backups/
+file-history/
+shell-snapshots/
+
+# Plan files
+plans/
+
+# IDE lock files
+ide/
+
+# Project memory
+projects/
+
+# OS files
+.DS_Store
+Thumbs.db
